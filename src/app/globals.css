@@ -2,25 +2,44 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --font-urbanist: var(--font-urbanist);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  --breakpoint-desktop: 90rem;
+}
+
+@layer base {
+  html {
+    @apply leading-none;
+  }
+  body {
+    @apply box-border p-0 m-0 text-foreground font-urbanist bg-[#FAFAFA];
+  }
+  button {
+    @apply cursor-pointer;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+}
+
+@layer utilities {
+  .wrapper {
+    @apply desktop:max-w-[1351px] xl:max-w-[1080px] lg:max-w-[960px] md:max-w-[700px] sm:max-w-[580px] max-w-[310px] mx-auto w-full;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
 }
