@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Highlight = () => {
   return (
-    <section className="flex justify-between pt-[88px] pb-[165px] pl-[65px] pr-[63px]">
+    <section className="flex justify-between pt-[88px] pb-[164px] pl-[65px] pr-[63px]">
       {/* highlight left */}
       <div className="flex items-end gap-[23px] w-full mt-3">
         <div className="max-w-[305px] h-[453px] w-full">

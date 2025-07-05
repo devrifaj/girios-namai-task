@@ -14,9 +14,13 @@
   --color-secondary-black: #282828;
   --color-tertiary-black: #5c5c5c;
   --color-paragraph: #626262;
+  --color-overlay: #7c7c7c00;
+  --color-gray-1: #C5C5C5;
   --color-border-1: #707070;
   --color-border-2: #dedede;
   --color-border-3: #a9a9a9;
+  --color-border-4: #c6c6c654;
+  --color-backdrop-bg: #9c9c9c87;
   --color-green: #39ab65;
   --color-green-light: #125f3f;
 }
@@ -36,9 +40,15 @@
   }
 }
 
-/* @layer components {
-  @apply text-primary;
-} */
+@layer components {
+  .bg-overlay {
+    background: linear-gradient(
+      270deg,
+      rgba(124, 124, 124, 0) 0%,
+      rgba(0, 0, 0, 0.72) 100%
+    );
+  }
+}
 
 @layer utilities {
   .wrapper {
