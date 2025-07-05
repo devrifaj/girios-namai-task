@@ -4,3 +4,6 @@ export { default as ProjectTagline } from "./ProjectTagline";
 export { default as FAQ } from "./FAQ";
 export { default as Highlight } from "./Highlight";
 export { default as Banner } from "./Banner";
+export { default as ConstructionTimeline } from "./ConstructionTimeline"; 
+export { default as Contact } from "./Contact"; 
+export { default as Footer } from "./Footer";

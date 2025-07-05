@@ -1,4 +1,14 @@
-import { FAQ, Header, Hero, ProjectTagline, Highlight, Banner } from "@/components";
+import {
+  FAQ,
+  Header,
+  Hero,
+  ProjectTagline,
+  Highlight,
+  Banner,
+  ConstructionTimeline,
+  Contact,
+  Footer,
+} from "@/components";
 
 const Home = () => {
   return (
@@ -10,6 +20,9 @@ const Home = () => {
         <FAQ />
         <Highlight />
         <Banner />
+        <ConstructionTimeline />
+        <Contact />
+        <Footer />
       </main>
     </>
   );

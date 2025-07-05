@@ -52,9 +52,9 @@ const Banner = () => {
             </div>
 
             {/* box description */}
-            <p className="text-[15px] leading-[21px] font-medium tracking-[.2px]">
-              Jau šiais metais išsikelkite į naujos kartos A++ energinės klasės
-              namus. Vakarų gatvėje.
+            <p className="text-[15px] leading-[21px] font-medium tracking-[.4px] mb-px">
+              Jau šiais metais isikelkite į naujos kartos, A++ energinės klasės
+              namus, Vakaru gatvėje.
             </p>
           </div>
 
