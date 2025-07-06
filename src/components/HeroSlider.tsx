@@ -29,7 +29,7 @@ const HeroSlider = () => {
   }, []);
 
   const baseButtonStyles =
-    "flex-center w-[61px] h-[61px] rounded-[5px] bg-[#FAFAFA] backdrop-blur-[64.30000305175781px] focus:outline-none border-0";
+    "flex-center xl:w-[61px] xl:h-[61px] w-[51px] h-[51px] rounded-[5px] bg-[#FAFAFA] backdrop-blur-[64.30000305175781px] focus:outline-none border-0";
 
   return (
     <div className="relative group w-full">
@@ -41,41 +41,40 @@ const HeroSlider = () => {
         effect="fade"
         fadeEffect={{ crossFade: true }}
         slidesPerView={1}
-        spaceBetween={20}
         loop={true}
-        className="w-full h-[670px]"
+        className="w-full xl:max-h-[670px] lg:max-h-[470px] sm:max-h-[300px] h-[250px] sm:h-full"
       >
         {/* slider item */}
         <SwiperSlide>
-          <div className="relative w-full h-full overflow-hidden">
+          <div className="h-full">
             <Image
               src="/slider-img/slider-img-1.jpg"
               width={1000}
-              height={700}
+              height={1000}
               alt="slider-img"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover"
             />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div>
+          <div className="h-full">
             <Image
               src="/slider-img/slider-img-1.jpg"
               width={1000}
-              height={700}
+              height={1000}
               alt="slider-img"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover"
             />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div>
+          <div className="h-full">
             <Image
               src="/slider-img/slider-img-1.jpg"
               width={1000}
-              height={700}
+              height={1000}
               alt="slider-img"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover sm:object-center"
             />
           </div>
         </SwiperSlide>

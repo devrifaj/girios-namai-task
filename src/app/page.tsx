@@ -22,8 +22,8 @@ const Home = () => {
         <Banner />
         <ConstructionTimeline />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 };

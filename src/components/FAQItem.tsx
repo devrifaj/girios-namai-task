@@ -16,10 +16,10 @@ const FAQItem = ({ question, answer }: FAQItemProps) => {
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center justify-between w-full text-left pt-[4px] pb-[5px] pl-3 pr-2"
       >
-        <span className="text-lg font-medium inline-block tracking-[.2px] ">
+        <span className="text-sm sm:text-base md:text-lg font-medium inline-block tracking-[.2px] ">
           {question}
         </span>
-        <div className="text-border-2 rounded-full p-[4px] border-border-2 border">
+        <div className="text-border-2 rounded-full p-[1px] sm:p-[2px] md:p-[4px] border-border-2 border">
           {isOpen ? <MinusIcon /> : <PlusIcon />}
         </div>
       </button>
