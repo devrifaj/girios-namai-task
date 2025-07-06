@@ -17,6 +17,7 @@
   --color-paragraph: #626262;
   --color-overlay: #7c7c7c00;
   --color-gray-1: #c5c5c5;
+  --color-gray-2: #d9d9d9;
   --color-border-1: #707070;
   --color-border-2: #dedede;
   --color-border-3: #a9a9a9;
@@ -25,7 +26,6 @@
   --color-border-6: #ffffff57;
   --color-border-7: #d8d8d8;
   --color-backdrop-bg: #9c9c9c87;
-  --color-gray-2: #d9d9d9;
   --color-green: #39ab65;
   --color-green-light: #125f3f;
 }
@@ -63,6 +63,15 @@
   }
   .footer-text {
     @apply text-[12px] font-normal uppercase;
+  }
+  .timeline-dots {
+    @apply absolute -top-[38px] w-4 h-4 bg-gray-2 rounded-full z-10;
+  }
+  .timeline-dots-active {
+    @apply absolute -top-[38px] w-4 h-4 bg-green rounded-full z-10;
+  }
+  .timeline-line {
+    @apply absolute -top-[31px] h-px bg-green;
   }
 }
 
